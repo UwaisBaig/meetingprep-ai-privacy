@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MeetingPrep AI — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #1E1B2E; line-height: 1.6; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 19px; margin-top: 36px; color: #1E1B2E; }
+  p, li { color: #475569; font-size: 15px; }
+  .updated { color: #94a3b8; font-size: 13px; margin-bottom: 32px; }
+  code { background: #F1F5F9; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  a { color: #4F46E5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — MeetingPrep AI</h1>
+<p class="updated">Last updated: August 24, 2026</p>
+
+<p>MeetingPrep AI ("the extension") is a Chrome extension that generates AI briefings before your Google Meet and Zoom calls, using your Google Calendar and Gmail data. This page explains exactly what data the extension accesses, where it goes, and how it's stored.</p>
+
+<h2>What data we access</h2>
+<ul>
+  <li><strong>Google Calendar (read-only):</strong> event titles, start/end times, attendee email addresses, and meeting links (Google Meet / Zoom) for events on your primary calendar.</li>
+  <li><strong>Gmail (read-only):</strong> subject lines, short snippets, and dates of email threads involving your meeting attendees, or matching a meeting's title when searched manually.</li>
+</ul>
+<p>The extension never requests write access to your Calendar or Gmail. It cannot send email, create events, or modify anything in your Google account.</p>
+
+<h2>Where your data goes</h2>
+<p>To generate a briefing, the extension sends meeting details and relevant email snippets to <strong>Groq's API</strong> (groq.com) for AI processing. This is the only third party your data is ever sent to. Groq does not permanently retain this data per their API terms.</p>
+<p>The extension itself has <strong>no backend server</strong>. There is no database, no analytics service, and no infrastructure operated by the developer that your data passes through. All communication happens directly between your browser, Google's APIs, and Groq's API.</p>
+
+<h2>Where your data is stored</h2>
+<p>All data — cached briefings, notes, follow-ups, contact history, and settings — is stored locally on your device using Chrome's <code>storage.local</code> API. It is never synced to Google's servers, never uploaded anywhere by the extension, and is deleted if you remove the extension.</p>
+
+<h2>Your Groq API key</h2>
+<p>You provide your own Groq API key, which is stored locally on your device and used only in the Authorization header of requests to Groq's API. It is never included in the extension's optional data export/backup feature, never logged, and never transmitted anywhere else.</p>
+
+<h2>Data you can export or delete</h2>
+<p>The extension includes an optional export feature that lets you download your notes, follow-ups, and meeting history as a JSON file for backup purposes. This export explicitly excludes your API key. You can delete all locally stored data at any time by removing the extension from Chrome.</p>
+
+<h2>No selling, no advertising, no tracking</h2>
+<p>We do not sell, rent, or share your data with advertisers or any third party other than Groq, as described above. The extension contains no analytics or tracking scripts.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or how your data is handled: <a href="mailto:uwaisbaig50@gmail.com">uwaisbaig50@gmail.com</a></p>
+
+</body>
+</html>
